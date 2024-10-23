@@ -228,6 +228,47 @@ ul {
     width: 180px;
   }
 }
+
+
+/* Change Your Habits Section */
+.change-habits {
+    text-align: center;
+    padding: 3rem 0;
+}
+.change-habits h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.change-habits p{
+    font-size: 1rem;
+    margin-bottom: 4rem;
+    color: gray;
+}
+
+
+.habit-item h3 {
+    font-size: 2rem;
+  margin-bottom: 1rem ;
+}
+.habit-item p{
+    font-size: 1rem;
+  margin: 1rem 0;
+  color: grey;
+}
+
+
+.habits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.habit-item .habit-img {
+    margin: 1rem 0;
+  border-radius: 50%;
+}
+
 /* small device : up to 576px , 
 medium device : 576px to 992px , 
 large device: above 992px .   */
