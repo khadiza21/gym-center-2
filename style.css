@@ -1,0 +1,150 @@
+/* General Reset */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #111;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  border: 2px solid green;
+}
+
+/* Header Section */
+
+/* navbar part */
+/* .navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ff5e57;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 1rem;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Hamburger Menu */
+/* .hamburger {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 576px) {
+ 
+    .nav-links {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    } 
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .navbar .nav-links {
+        display: flex;
+    }
+} */ 
+
+ /* small device : up to 576px , 
+medium device : 576px to 992px , 
+large device: above 992px .   */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ff5e57;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 1rem;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Hamburger Menu */
+.toggle {
+    display: none; /* Hide the checkbox */
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .nav-links {
+        display: none;
+       
+        position: absolute;
+        top: 100%;
+    
+    }
+    .hamburger {
+        display: block; 
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .navbar .nav-links {
+        display: flex; 
+    }
+}
