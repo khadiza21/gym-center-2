@@ -428,13 +428,15 @@ ul {
 }
 
 .bmi-container {
-    padding: 5rem 0;
+    padding: 5rem 2rem;
     margin: 5rem 0;
     display: flex;
     justify-content: space-around;
     background-color: #222;
     gap: 2rem;
     flex-wrap: wrap;
+    border-radius: 5px;
+
 }
 
 .bmi-chart table {
@@ -490,6 +492,27 @@ ul {
     color: grey;
 
 }
+
+@media (max-width: 576px) {
+   .bmi-chart, .bmi-form{
+    width: 100%;
+   }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .bmi-chart, .bmi-form{
+        width: 100%;
+       }
+  
+}
+@media  (max-width: 992px) {
+    .bmi-chart, .bmi-form{
+        width: 50%;
+       }
+   
+}
+
+
 
 
 /* Team Section */
