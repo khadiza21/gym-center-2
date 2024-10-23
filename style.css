@@ -445,6 +445,103 @@ color: grey;
     
 }
 
+
+/* Team Section */
+.team {
+    padding: 3rem 1.5rem;
+    
+}
+.team-header{
+    text-align: center;
+
+}
+.team-header h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.team-header p{
+    margin-bottom: 3rem;
+    color: grey;
+}
+.team-grid {
+    display: grid;
+    gap: 2rem;
+    background-color: rgba(128, 128, 128, 0.212);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.team-member {
+
+   width: 100%;
+    position: relative;
+   
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+   
+}
+
+.team-member img {
+    border-radius: 5px;
+    width:100%;
+    height: 350px;
+    object-fit: cover;
+  
+}
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.overlay-text h3{
+    color: #fff;
+    margin: 0;
+    padding: 0.5rem ; 
+}
+.overlay-text p {
+    color:rgb(177, 175, 175);
+    margin: 0;
+    padding: 0.5rem ;
+}
+
+
+
+
+
+@media (max-width: 576px) {
+    .team-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width: 992px) {
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+
 /* small device : up to 576px , 
 medium device : 576px to 992px , 
 large device: above 992px .   */
