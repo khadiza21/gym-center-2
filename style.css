@@ -31,120 +31,203 @@ ul {
 /* Header Section */
 
 /* navbar part */
-/* .navbar {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-}
-
-.navbar .logo {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #ff5e57;
-}
-
-.navbar .nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.navbar .nav-links li {
-    margin-left: 1rem;
-}
-
-.navbar .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-}
-
-/* Hamburger Menu */
-/* .hamburger {
-    display: none;
-    font-size: 2rem;
-    color: #fff;
-    cursor: pointer;
-}
-
-
-
-@media (max-width: 576px) {
- 
-    .nav-links {
-        display: none;
-    }
-    .hamburger {
-        display: block;
-    } 
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-    .navbar .nav-links {
-        display: flex;
-    }
-} */ 
-
- /* small device : up to 576px , 
-medium device : 576px to 992px , 
-large device: above 992px .   */
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
 }
 
 .navbar .logo {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #ff5e57;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff5e57;
 }
 
 .navbar .nav-links {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .navbar .nav-links li {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .navbar .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
+  text-decoration: none;
+  color: rgb(216, 212, 212);
+  font-weight: 500;
 }
-
-/* Hamburger Menu */
-.toggle {
-    display: none; /* Hide the checkbox */
-}
-
-.hamburger {
-    display: none;
-    font-size: 2rem;
-    color: #fff;
-    cursor: pointer;
+.navbar .nav-links .home a {
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: #ff5e57;
+  color: #fff;
 }
 
 @media (max-width: 576px) {
-    .nav-links {
-        display: none;
-       
-        position: absolute;
-        top: 100%;
-    
-    }
-    .hamburger {
-        display: block; 
-    }
+  .mobile-nav {
+    display: block;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav i {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-    .navbar .nav-links {
-        display: flex; 
-    }
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav {
+    display: block;
+  }
 }
+@media (min-width: 992px) {
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav {
+    display: block;
+  }
+}
+
+/* Banner Section Styling */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.banner-text {
+  padding: 3rem 0;
+  flex-basis: 50%;
+
+  height: 100%;
+}
+
+.banner-text h1 {
+  font-size: 535%;
+  line-height: 1.5;
+}
+
+.banner-text h1 span {
+  font-family: "cursive";
+  font-style: italic;
+}
+
+.banner-text p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: gray;
+}
+
+.banner-buttons {
+  margin-top: 2rem;
+}
+
+.join-btn,
+.download-btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 24px;
+}
+
+.join-btn {
+  background-color: #ff5e57;
+  color: white;
+}
+
+.download-btn {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+/* Banner Image and Cards */
+.banner-image {
+  position: relative;
+  flex-basis: 50%;
+
+  max-width: 600px;
+  height: 650px;
+}
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.transparent-card {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.397);
+  padding: 1rem;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 200px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.video-card {
+  top: 10%;
+  left: 40%;
+}
+
+.workout-card {
+  bottom: 10%;
+  left: 10%;
+}
+
+.transparent-card i {
+  font-size: 1.5rem;
+  color: #ff5e57;
+}
+
+.transparent-card span {
+  font-weight: 600;
+}
+
+/* Responsive Styling */
+@media (max-width: 576px) {
+  .banner {
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .banner-text,
+  .banner-image {
+    flex-basis: 100%;
+  }
+  .banner-text h1 {
+    font-size: 335%;
+  }
+
+  .transparent-card {
+    width: 160px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+
+  .transparent-card {
+    width: 180px;
+  }
+}
+/* small device : up to 576px , 
+medium device : 576px to 992px , 
+large device: above 992px .   */
